@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Uncheck Viewed Files on GitHub",
+  "version": "1.0",
+  "description": "Automatically unchecks viewed files on GitHub pull requests.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://github.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

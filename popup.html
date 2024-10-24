@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Uncheck Viewed Files</title>
+    <style>
+      body {
+        width: 200px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #007bff; /* Blue color */
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+      }
+      button:active {
+        background-color: #004494; /* Even darker on click */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="uncheckViewed">Uncheck Viewed Files</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
